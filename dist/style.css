@@ -127,7 +127,6 @@
 
 
 /*-----------HEADER-----------------*/
-
 .header{
     background: #2b2b2b;
 }
@@ -144,7 +143,7 @@
 
 .header .branding h2{
     color: #ffffff;
-    margin-left: 1rem;
+    margin-left: 2rem;
     font-size: 2.5rem;
 }
 
@@ -246,8 +245,8 @@
 } 
 
 
-
 /*-----------BANNER-----------------*/
+
 .banner{
     background: #ffffff;
     padding: 5rem 0;
@@ -256,22 +255,124 @@
 }
 .banner h1{
     color:#ffa700;
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: 800;   
     max-width: 50rem;
+    line-height: 10rem;
+    margin-left: 5rem;
 }
 .banner .banner__wrapper{
     display: flex;
+    align-items: center;
 }
 
 .banner p{
     max-width: 50rem; 
     justify-content: center;
+    margin-left: 5rem;
+    text-align: justify;
 }
 
 .banner a{
-    margin-top: 15rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    text-align: center;
 }
 .banner img{
-    right: 100px;
+    margin-left: 11rem;
+    align-items: center;
 }
+
+@media  screen and (max-width: 500px){
+    .banner img{
+        display: block;
+        margin left: 0.5rem;
+
+    }
+    .banner h1{
+        display: block;
+        align-items: center;
+        font-size: 7rem;
+        font-weight: 800;
+        line-height: 7rem;
+        margin:0 auto;
+        margin-bottom: 7rem;
+        
+    }
+
+    .banner a{
+        display: block;
+        margin-top: 5rem;
+        margin-left: 5rem;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 7rem;
+    }
+
+    .banner p{
+        display: block;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    .banner .banner__wrapper{
+        display: block;
+        text-align: center;
+    }
+    
+    .
+    .hm-services .hm-services__item{
+        margin-top: 6rem;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid #fffefe;
+        
+    }
+
+/*-----------SERVICES-----------------*/
+.hm-services{
+    background: #2b2b2b;
+    padding: 8rem 0;
+}
+
+.hm-services .hm-services__item i{
+    font-size: 5rem;
+    color:#ffa700; 
+    margin-bottom: 2rem;
+}
+
+.hm-services .hm-services__item h4{
+    color:#ffa700;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hm-services .hm-services__item p{
+    color: #ffffff;
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+.hm-services .hm-services__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hm-services .hm-services__item{
+    text-align: center;
+    margin: 0 4rem;
+}
+
+@media  screen and (max-width: 500px){
+    .hm-services .hm-services__wrapper{
+        display: block;
+        text-align: center;
+    }
+    .hm-services .hm-services__item{
+        margin-top: 6rem;
+        padding-bottom: 5rem;
+        border-bottom: 1px solid #fffefe;
+        
+    }
+    
+
+
+
