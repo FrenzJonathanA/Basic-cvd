@@ -129,6 +129,8 @@
 /*-----------HEADER-----------------*/
 .header{
     background: #2b2b2b;
+    position: fixed;
+    width: 100%;
 }
 
 .header .header__wrapper{
@@ -550,7 +552,7 @@
     margin-top: -1rem;
 }
 
-@media screen and (max-width: 5000px){
+@media screen and (max-width: 500px){
     .contact{
         display: block;
         align-items: center;
@@ -575,24 +577,14 @@
 .footer .footer__wrapper h6{
     color: #706f6f;
     font-size: 1.5rem;
-    margin-left: -50rem;
-}
-
-.footer .footer__wrapper ul li{
-    margin-left: 1rem;
-    color: #706f6f;
-    font-size: 2rem;
+    margin-left: 5rem;
 }
 
 .footer .footer__wrapper ul li a{
     color: #706f6f;
     font-size: 2.5rem;
-}
-
-.footer .footer__wrapper ul h6{
-    font-size: 1.5rem;
-    color: #706f6f;
-    margin-left: 4rem;
+    max-width: 10rem;
+    margin-right: 2rem;
 }
 
 .footer .footer__wrapper ul{
@@ -613,29 +605,31 @@
         align-items: center;
     }
 
-.footer .footer__wrapper ul li {
-    display: block;
-    align-items: center;
-}
+    .footer .footer__wrapper ul li {
+        display: block;
+        align-items: center;
+        max-width: 10rem;
+        align-items: center;
+    }
 
-.footer .footer__wrapper h6{
-    display: block;
-    text-align: center ;
-    align-items: center;
-    margin-left: 2rem;
-    margin-top: 2rem;
-}
+    .footer .footer__wrapper h6{
+        display: block;
+        text-align: center ;
+        align-items: center;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
 
-.footer .footer__wrapper h5{
-    display: block;
-    text-align: center ;
-    margin-top: -2rem;
-}
-.footer .footer__wrapper{
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-}
+    .footer .footer__wrapper h5{
+        display: block;
+        text-align: center ;
+        margin-top: -2rem;
+    }
+    .footer .footer__wrapper{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 }
 /*---------ABOUT BANNER--------------*/
@@ -698,7 +692,7 @@
 
 }
 .Abanner .Abanner__text ul li a{
-    /* margin-left: 5rem; */
+    margin-left: 5rem;
     color: #ffa700;
     margin-top: 3rem;
     font-size: 3rem;
@@ -939,6 +933,651 @@
    
 }
 
+/*---------UPDATES--------------*/
+
+
+/*---------UPDATES LEFT--------------*/
+.updates{
+    background: #ffffff;
+    padding-top:15rem;
+}
+
+.updates .updates__wrapper{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-gap: 5rem;
+}
+
+.updates .updates__title{
+    margin-top: -3rem;
+}
+
+.updates .updates__title h1{
+    color: #ffa700;
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.updates .updates__author ul{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.updates .updates__author ul li{
+    font-size: 1.2rem;
+    margin-right: 4rem;
+}
+
+.updates .updates__author ul li i{
+    margin-right: 1rem;
+}
+
+.updates .updates__text h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.updates .updates__text{
+    margin-bottom: 5rem;
+}
+
+.updates .updates__text p{
+    margin: 2.5rem 0;
+    text-align: justify;
+}
+
+.updates .updates__text a{
+    color: #ffa700;
+    font-size: 1.5rem;
+}
+
+.updates .updates__item{
+    padding: 5rem 0;
+}
+
+.updates .updates__item:last-child{
+    padding-bottom: 0;
+    padding-top: 5rem;
+}
+
+.updates .updates__item img{
+    width: 100%
+}
+
+.updates .updates__item:not(:last-child){
+    border-bottom: 1px solid hsl(0, 0%, 70%);
+}
+
+/*---------UPDATES RIGHT--------------*/
+
+.updates .updates__categ{
+    padding: 5rem 0;
+}
+
+.updates .updates__categ h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.updates .updates__categ table{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.updates .updates__categ table tr{
+    height: 5rem;
+}
+
+.updates .updates__post{
+    padding-top: 13rem;
+}
+
+.updates .updates__post h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: -4rem;
+}
+
+.updates .updates__post .post__item{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.updates .updates__post .post__item img{
+    width: 50%;
+}
+.updates .updates__post .post__item__text{
+    margin-left: 3rem;
+}
+
+.updates .updates__post .post__item .post__item__text h4{
+    font-weight: 400;
+}
+
+.updates .updates__post .post__item .post__item__text p{
+    font-weight: 600;
+    text-align: justify;
+}
+
+.updates .updates__post{
+    border-top: 1px solid hsl(0, 0%, 70%);
+    margin-bottom: 3rem;
+
+}
+
+.updates .updates__tags{
+    padding:10rem 0;
+    border-top: 1px solid hsl(0, 0%, 70%);
+}
+.updates .updates__tags h3{
+    color: #ffa700;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.updates .updates__tags .updates__click{
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.updates .updates__click a{
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+
+@media screen and (max-width: 500px){
+    .updates{
+        display: block;
+        justify-content: center;
+    }
+
+    .updates .updates__wrapper{
+        display: block;
+        grid-template-columns: 2.5fr 1.5fr;
+        grid-gap: 3rem;
+    }
+    .updates .updates__author ul li{
+        font-size: .8rem;
+    }
+
+    .updates .updates__author ul{
+        margin-bottom: -.5rem;
+    }
+
+    .updates .post__item{
+        padding-bottom: 1rem;
+    }
+
+    .updates .updates__item{
+        padding: 4rem 0;
+    }
+    .updates .updates__title h1{
+        font-size: 3.5rem;
+        margin-top: -2.5rem;
+    }
+
+    .updates .updates__title p{
+        font-size: 1.5rem;
+        margin-bottom: -1rem;
+        margin-top: -2rem;
+    }
+
+    .updates .updates__text h3{
+        font-size: 2.5rem;
+        margin-bottom: -2rem;
+    }
+
+    .updates .updates__text p{
+        font-size: 1.5rem;
+    }
+
+    .updates .updates__tags .updates__click {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        padding: 0 4rem;
+        margin-left: 4rem;
+    }
+
+    .updates .updates__tags .updates__click a {
+        font-size: 1.5rem;
+    }
+
+    .updates .updates__post h3{
+        font-size: 2.5rem;
+        margin-bottom: -1rem;
+    }
+
+    .updates .updates__tags h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .updates .updates__categ h3{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .updates .updates__categ table{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .updates .updates__categ table tr{
+        height: 3rem;
+    }
+
+    .updates .updates__left{
+        display: block;
+        width: 100%;
+    }
+    .updates .updates__right .updates__categ{
+        display: block;
+        width: 100%;
+    }
+    .updates .updates__tags{
+        padding:1rem 0;
+    }
+    .updates .updates__post{
+        padding-top: 1rem;
+    }
+    .updates .updates__categ{
+        padding: 3rem 0;
+    }
+    .updates .updates__post .post__item{
+        margin-bottom: -2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+/*-----------SERVICE PAGE----------------*/
+
+/*---------SERVICE WDD--------------*/
+
+.SbannerW{
+    background: #ffffff;
+    padding-top:5rem;
+    text-align: center;
+}
+
+.SbannerW .SbannerW__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.SbannerW .SbannerW__wrapper .SbannerW__text{
+    text-align: left;
+    max-width: 60rem;
+}
+
+.SbannerW__arrow a{
+    color: #ffa700;
+    font-size: 5rem;
+}
+
+.SbannerW h5{
+    font-size: 2rem;
+    margin: auto;
+}
+.SbannerW h6{
+    font-size: 1rem;
+    max-width: 15rem;
+    text-align: left;
+    margin-top: 2rem;
+    font-style: italic;
+    margin-top: -.5rem;
+}
+.SbannerW h3{
+    font-size: 3rem;
+    color: #ffa700;
+    margin: auto;
+}
+
+.SbannerW h1{
+    color:#ffa700;
+    font-size: 8rem;
+    font-weight: 800;   
+    margin-bottom: 1rem;
+}
+
+.SbannerW p{
+    max-width: 70rem; 
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: justify;
+}
+
+.SbannerW .SbannerW__wrapper img{
+    margin-left: 15rem;
+    width: 70%;
+}
+
+@media  screen and (max-width: 500px){
+    .SbannerW{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+    .SbannerW .SbannerW__wrapper{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .SbannerW .SbannerW__wrapper img{
+        display: block;
+        align-items: center;
+        margin-right: 13rem;
+        width: 80%
+    }
+    
+    .SbannerW h5{
+        display: block;
+        font-size: 2rem;
+        margin: 0 1REM;
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+    .SbannerW h6{
+        font-size: 1rem;
+        max-width: 15rem;
+        text-align: left;
+        margin-top: 2rem;
+        font-style: italic;
+        margin-top: -.5rem;
+        margin: 0 1REM;
+        padding: 0 2rem;
+    }
+    .SbannerW h3{
+        font-size: 3rem;
+        color: #ffa700;
+        margin: 0 1REM;
+        padding: 0 2rem;
+ 
+    }    
+    
+    .SbannerW .SbannerW__wrapper h1{
+        display: block;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height:4rem;
+        margin-bottom: 2rem; 
+    }
+
+    .SbannerW .SbannerW__text p{
+        display: block;
+        align-items: center;
+        margin: 0 1rem;
+        padding: 0 2rem;
+    } 
+}
+
+
+/*---------SERVICE GVD--------------*/
+.SbannerG{
+    background: #2b2b2b;
+    padding:5rem 0;
+    text-align: center;
+}
+
+.SbannerG .SbannerG__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.SbannerG .SbannerG__wrapper .SbannerG__text{
+    text-align: left;
+    max-width: 60rem;
+    margin-left: 20rem;
+}
+
+.SbannerG__arrow a{
+    color: #ffa700;
+    font-size: 5rem;
+}
+
+.SbannerG h5{
+    font-size: 2rem;
+    margin: auto;
+    color: #fffefe;
+}
+.SbannerG h6{
+    font-size: 1rem;
+    max-width: 15rem;
+    text-align: left;
+    margin-top: .5rem;
+    color: #ffffff;
+    font-style: italic;
+    margin-top: -.5rem;
+}
+.SbannerG h3{
+    font-size: 3rem;
+    color: #ffa700;
+    margin: auto;
+}
+
+.SbannerG h1{
+    color:#ffa700;
+    font-size: 8rem;
+    font-weight: 800;   
+    margin-bottom: 1rem;
+}
+
+.SbannerG p{
+    max-width: 70rem; 
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.SbannerG .SbannerG__wrapper img{
+    margin-left: -15rem;
+    width: 50%;
+}
+
+@media  screen and (max-width: 500px){
+    .SbannerG{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+    .SbannerG .SbannerG__wrapper{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .SbannerG .SbannerG__wrapper img{
+        display: block;
+        align-items: center;
+        width: 100%;
+        margin-left: 0rem;
+    }
+    
+    .SbannerG h5{
+        display: block;
+        font-size: 2rem;
+        color: #fffefe;
+        margin-left: -18rem;
+    }
+    .SbannerG h6{
+        display: block;
+        font-size: 1rem;
+        text-align: left;
+        margin-top: .5rem;
+        color: #ffffff;
+        font-style: italic;
+        margin-left: -18rem;
+    }
+    .SbannerG h3{
+        display: block;
+        font-size: 3rem;
+        color: #ffa700;
+        margin-left: -18rem;
+    }
+    
+    .SbannerG h1{
+        display: block;
+        color:#ffa700;
+        font-size: 4rem;
+        font-weight: 800;   
+        margin-bottom: 1rem;
+        margin-right: 9rem;
+        margin-left: -15rem;
+        text-align: center;
+
+    }
+    
+    .SbannerG p{
+        max-width: 70rem; 
+        margin-top: 2rem;
+        justify-content: center;
+        text-align: justify;
+        color: #ffffff;
+        margin-left: -18rem;
+        margin-right: 3rem;
+    }
+    
+
+    .SbannerG .SbannerG__text p{
+        display: block;
+    } 
+}
+/*---------SERVICE sms--------------*/
+.SbannerS{
+    background: #ffffff;
+    padding:5rem 0;
+    align-items: center;
+}
+
+.SbannerS .SbannerS__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.SbannerS .SbannerS__wrapper .SbannerS__text{
+    text-align: left;
+    max-width: 60rem;
+}
+
+.SbannerS__arrow a{
+    color: #ffa700;
+    font-size: 5rem;
+}
+
+.SbannerS h5{
+    font-size: 2rem;
+    margin: auto;
+    color: #000000;
+}
+.SbannerS h6{
+    font-size: 1rem;
+    max-width: 15rem;
+    text-align: left;
+    margin-top: -.5rem;
+    color: #000000;
+    font-style: italic;
+}
+.SbannerS h3{
+    font-size: 3rem;
+    color: #ffa700;
+    margin: auto;
+}
+
+.SbannerS h1{
+    color:#ffa700;
+    font-size: 8rem;
+    font-weight: 800;   
+    margin-bottom: 1rem;
+}
+
+.SbannerS p{
+    max-width: 70rem; 
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: justify;
+    color: #000000;
+}
+
+.SbannerS .SbannerS__wrapper img{
+    margin-left: 15rem;
+    width: 70%;
+}
+
+@media  screen and (max-width: 500px){
+    .SbannerS{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+    .SbannerS .SbannerS__wrapper{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+ 
+    .SbannerS .SbannerS__wrapper img{
+        display: block;
+        align-items: center;
+        margin-right: 13rem;
+        width: 80%
+    }
+    
+    .SbannerS h5{
+        display: block;
+        font-size: 2rem;
+        margin: 0 1REM;
+        margin-top: 2rem;
+        padding: 0 2rem;
+    }
+    .SbannerS h6{
+        font-size: 1rem;
+        max-width: 15rem;
+        text-align: left;
+        margin-top: 2rem;
+        font-style: italic;
+        margin-top: -.5rem;
+        margin: 0 1REM;
+        padding: 0 2rem;
+    }
+    .SbannerS h3{
+        font-size: 3rem;
+        color: #ffa700;
+        margin: 0 1REM;
+        padding: 0 2rem;
+ 
+    }    
+    
+    .SbannerS .SbannerS__wrapper h1{
+        display: block;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height:4rem;
+        margin-bottom: 2rem; 
+    }
+
+    .SbannerS .SbannerS__text p{
+        display: block;
+        align-items: center;
+        margin: 0 1rem;
+        padding: 0 2rem;
+    } 
+}
+
 /*---------REPEATABLE PATTERNS--------------*/
 .btn{
     padding: 1.2rem 1.5rem;
@@ -966,3 +1605,15 @@
     background: #ffa700;
     border: 1px solid #2b2b2b;
 }
+
+.bg--light{
+    background: rgb(255, 255, 255);
+    color: #000000;
+    border: 1px solid #2b2b2b;
+}
+.bg--light:hover{
+    background: #2b2b2b;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
